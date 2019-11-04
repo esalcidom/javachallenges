@@ -10,7 +10,7 @@ public class OptionalChallenge {
     static String finalZionValue = "";
     static int matrixCount = 0;
 
-    public static void run() {
+    public static String run() {
         Optional<String> optFromMatrix = Optional.ofNullable(finalZionValue);
         var agentSmith = "Virus";
 
@@ -36,7 +36,7 @@ public class OptionalChallenge {
 
         finalZionValue += Optional.of("trinity").stream().map(String::toUpperCase).filter(trinity -> trinity.equals("TRINITY")).collect(Collectors.joining());
         //output Virus1theOneTRINITY
-        System.out.println(finalZionValue);
+        return finalZionValue;
 
     }
 
